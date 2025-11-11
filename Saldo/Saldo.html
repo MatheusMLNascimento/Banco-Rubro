@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saldo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="SaldoStyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/3e8025a292.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container py-3 justify-content-space-between">
+      <!-- Logo -->
+      <a href="../Profile/Profile.html" class="profile d-flex" style="text-decoration: none; color: white;">
+        <div class="profileIcon d-flex align-items-center">
+          <img src="https://i.pinimg.com/736x/69/24/bf/6924bf70a448e7e1e28d3fcaad7192fa.jpg" alt="">
+        </div>
+        <p id="username">u</p>
+      </a>
+
+      <div class="user">
+        <p id="agencia">a</p>
+        <p id="contaCorrente">cc</p>
+        <button class="sair" onclick="sair()">Sair</button>
+      </div>
+
+  </header>
+
+  <main>
+    <!--  Saldo -->
+    <div class="mainCont">
+      <div class="saldo">
+        <h1>Saldo</h1>
+        <div class="peidos">
+          <i class="fa-solid fa-wallet"></i>
+          <h1 id="saldoConta"></h1>
+        </div>
+      </div>
+
+      <div class="Bolas">
+        <a href="#" onclick="abrirDeposito(event)">
+          <div class="Bola">
+            <img src="../Imgs/Saldo icons/pix.png" alt="">
+          </div>
+          <span class="descIcons">Depósito</span>
+        </a>
+        <a href="#" onclick="abrirBoleto(event)">
+          <div class="Bola">
+            <img src="../Imgs/Saldo icons/barcode.png" alt="">
+          </div>
+          <span class="descIcons">Boleto</span>
+        </a>
+        <a href="#" onclick="abrirSaque(event)">
+          <div class="Bola">
+            <img src="../Imgs/Saldo icons/Pay.png" alt="">
+          </div>
+          <span class="descIcons">Saque</span>
+        </a>
+        <a href="#" onclick="abrirTransferencia(event)">
+          <div class="Bola">
+            <img src="../Imgs/Saldo icons/bat.png" alt="">
+          </div>
+          <span class="descIcons">Transferência</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Slider  -->
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">Slide 1</div>
+        <div class="slide">Slide 2</div>
+        <div class="slide">Slide 3</div>
+      </div>
+
+      <button class="btn prev">⟨</button>
+      <button class="btn next">⟩</button>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container py-3">
+      <div>Desenvolvedores: Ana C, Matheus M, Rafaela F, Vinicius M</div>
+      <div>Rubro™ 2025</div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

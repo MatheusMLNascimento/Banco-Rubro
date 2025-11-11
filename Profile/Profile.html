@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="../root.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Profile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container py-3">
+      <!-- Logo -->
+      <a href="../homepage/index.html" style="text-decoration: none; color: white;">
+        <div class="d-flex align-items-center">
+          <img src="../imgs/logo.png" alt="Logo" class="logo" />
+          <span class="ms-2">Rubro</span>
+        </div>
+    </div>
+    </a>
+  </header>
+
+  <main>
+
+    <div class="profile-container">
+      <div class="profile">
+        <div class="Dados">
+          <div class="perfil">
+            <img src="../imgs/ImagemCidade.png" class="fotoPerfil" alt="">
+          </div>
+          <div class="Atuais">
+            <p id="username">Nome</p>
+            <p id="email">Email</p>
+            <p id="senha">Senha</p>
+            <p id="cpf">CPF</p>
+          </div>
+        </div>
+        <form action="#" method="post" class="profile-form">
+          <div class="box-row">
+            <label for="username">nome:</label>
+            <input type="text" id="username" name="username" minlength="10" maxlength="50" />
+          </div>
+          <div class="box-row">
+            <label for="email">e-mail:</label>
+            <input type="email" id="Email" name="Email" />
+          </div>
+
+          <div class="box-row">
+            <label for="cpf">cpf:</label>
+            <input id="cpf" inputmode="numeric" autocomplete="off" maxlength="14" />
+          </div>
+
+          <div class="box-row">
+            <label for="password">senha:</label>
+            <input type="password" name="senha" minlength="8" required />
+          </div>
+
+          <button type="submit" class="button">Atualizar dados </button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container py-3">
+      <div>Desenvolvedores: Ana C, Matheus M, Rafaela F, Vinicius M</div>
+      <div>Rubro™ 2025</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="../script.js"></script>
+</body>
+
+</html>

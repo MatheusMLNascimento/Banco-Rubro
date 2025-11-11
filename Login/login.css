@@ -1,0 +1,99 @@
+@import url("../root.css");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 1.45rem;
+  background-color: var(--primary-color);
+}
+
+header,
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.corpse {
+  background-image: url('../imgs/ImagemCidade.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 2vh;
+  width: 100%;
+  height: 100vh;
+}
+
+.login-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-shadow: 0 4px 20px #00000033;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  width: 40vw;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 1rem;
+  }
+  .login-container {
+    min-width: 60vw;
+  }
+}
+
+label, input {
+    border-radius: 15px;
+    border: none;
+}
+
+input {
+    font-size: larger;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    font-size: 16px;
+}
+
+.login-container h2 {
+  font-size: 60px;
+}
+
+.input-container {
+  position: relative;
+  width: 250px;
+}
+
+.olho, #iconeOlho {
+  border: none;
+  background: none;
+  justify-content: center;
+}
+
+.btn-primary {
+  margin-top: 1vw;
+  padding: 1vw 1.5vw;
+  font-size: 25px;
+  background-color: #560c0c;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+}

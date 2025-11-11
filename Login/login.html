@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../root.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container py-3 justify-content-center" style="font-size: 3vw;">
+            <!-- Logo -->
+            <a href="../homepage/index.html" style="text-decoration: none; color: white;">
+                <div class="d-flex align-items-center">
+                    <img src="../imgs/logo.png" alt="Logo" style="width: 5vw; color: white; height: 5vw;" />
+                    <span class="ms-1">Rubro</span>
+                </div>
+        </div>
+        </a>
+    </header>
+
+    <div class="corpse">
+
+        <!-- Formulário de Login -->
+        <main>
+            <div class="login-container">
+                <h2>Seja Rubro</h2>
+                <div class="login">
+                    <form action="#" method="get" class="login-form" onsubmit="entrar(event)">
+                        <label for="agency">Agência</label>
+                        <input inputmode="numeric" id="agencia" autocomplete="false" name="agencia" minlength="5" maxlength="6"
+                            placeholder="xxxx-x" required />
+
+                        <label for="contaCorrente">Conta Corrente</label>
+                        <input inputmode="numeric" id="contacorrente" autocomplete="false" name="contacorrente" placeholder="xxxxx-x" minlength="6" maxlength="7" required />
+
+                        <label for="password">senha</label>
+                        <input type="password" id="senha" name="senha" minlength="8" required onchange='conferesenha()' />
+                        <button type="button" class="olho" onclick="toggleSenha()" aria-label="Mostrar senha">
+                            <i id="iconeOlho" class="fas fa-eye" aria-hidden="true"></i>
+                        </button>
+
+
+                        <label for="password">confirme sua senha</label>
+                        <input type="password" id="confirma" name="confirma" required onchange='conferesenha()' />
+
+                        <button type="submit" class="btn-primary">Entrar</button>
+                        <p>Não possuo conta. <a href="../Cadastro/cadastro.html">Cadastrar</a></p>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container py-3">
+            <div>Desenvolvedores: Ana C, Matheus M, Rafaela F, Vinicius M</div>
+            <div>Rubro™ 2025</div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

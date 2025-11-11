@@ -1,0 +1,99 @@
+/* ------------------------------
+   1. FONTES E TIPOGRAFIA GLOBAL
+---------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
+@import url("../root.css");
+
+body {
+  margin: 0;
+  font-family: "Cinzel Decorative", cursive;
+  background-image: url(../Imgs/ImagemCidade.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+label {
+  font-size: 1.55rem;
+}
+
+input {
+  font-size: 1rem;
+  height: 4vh;
+}
+
+.logo {
+  height: 5vh;
+}
+
+/* ------------------------------
+   3. CONTEÚDO PRINCIPAL
+---------------------------------*/
+
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  margin: 4vh 30vw;
+  border: white 2px solid;
+  padding: 6vh 4vw;
+  border-radius: 2vw;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+}
+
+.fotoPerfil {
+  height: 100%;
+  width: 100%;
+}
+
+.perfil {
+  overflow: hidden;
+  background-color: var(--primary-color);
+  border: 2px white solid;
+  border-radius: 100%;
+  margin-bottom: 4vh;
+  width: 15vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+}
+
+.Dados {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+}
+
+.button-perfil {
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: inherit;
+  display: block;
+}
+
+.button {
+  background-color: white;
+  color: red;
+  font-size: large;
+  border: none;
+  height: 5vh;
+  width: 15vw;
+  border-radius: 10vw;
+  font-weight: bold;
+}
+
+.box-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  margin: 1.5vh auto;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+}
